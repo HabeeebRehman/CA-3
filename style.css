@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Koulen', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+#description p{
+font-family: 'Courier New', Courier, monospace;
+}
+#btn {
+    width: 70px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#Name h1 {
+    font-size: 65px;
+    color: white;
+    margin: 1.5vh;
+    -webkit-text-stroke: 2px navy;
+    font-family:'Noto Sans Arabic', sans-serif;
+}
+
+input {
+    width: 500px;
+    height: 23px;
+    border-radius: 25px;
+    border: 5px solid white;
+    font-size: 26px;
+}
+
+#search-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#description {
+    color: white;
+    margin-top: 3%;
+    font-size: 22px;
+    text-align: center;
+}
+
+#random-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+#random-img h2 {
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin-top: 15px;
+}
+
+#random-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+#search-res {
+    color: white;
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+#msg {
+    text-align: center;
+    color: red;
+    display: none;
+    margin-bottom: 20px;
+}
+
+#items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    color: white;
+}
+
+.singleItem {
+    cursor: pointer;
+}
+
+.card img {
+    width: 300px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+#search-res {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+
+    width: 30%;
+}
+
+.close {
+    border: 2px solid black;
+    color: black;
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Name h1 {
+        font-size: 45px;
+    }
+
+    .card img {
+        width: 185px;
+    }
+
+    input {
+        width: 300px;
+        height: 15px;
+        padding: 5px;
+    }
+
+    .modal-content {
+        width: 70%;
+    }
+}
